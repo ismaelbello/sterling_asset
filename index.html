@@ -7,12 +7,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <img class="logo" src="assets/img/Sterling-Logo-Full-Color.png" alt="">
+      <nav class="nav">
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+        <div class="nav__link hide">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </nav>
+    </header>
 
-    <img src="assets/img/Sterling-Logo-Full-Color.png" alt="">
-    <h1>Hello,<br />Welcome to Sterling Asset portal</h1>
+     
+    <h1>Hello,<br />Welcome to Sterling Asset Portal</h1>
 
     <div class="container">
-      <form action=";" id="form">
+      <form action="/assets/pages/asset.html" id="form">
         <h2>Login</h2>
         <div class="input-control">
           <label for="username">Username</label>
@@ -26,11 +41,12 @@
           <div class="error"></div>
         </div>
 
-        <a href="/assets/pages/asset.html">
-          <button type="submit" class="submit">Sign in</button>
-        </a>
+        <!-- <button onclick="window.open('/assets/pages/asset.html');" >Sign in</button> -->
+        <button class="submit">Sign in</button>
       </form>
     </div>
+
+    <footer></footer>
 
     <script src="script.js"></script>
   </body>

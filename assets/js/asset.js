@@ -1,15 +1,15 @@
-const employee = document.querySelector('.branch')
-const submit  = document.querySelector('.submit')
+const branch = document.querySelector('.branch')
+
 
 
 const displayBranches = (values) =>{
     branch.forEach(element =>{
         element.style.display = "none"
         const name = element.children[1].innerHTML.toUpperCase();
-        const position = element.children[2].innerHTML.toUpperCase();
-        const job_type = element.children[3].innerHTML.toUpperCase();
+        const location = element.children[2].innerHTML.toUpperCase();
+        const asset_type = element.children[3].innerHTML.toUpperCase();
 
-        if (name.includes(values) || position.includes(values) || job_type.includes(values)){
+        if (name.includes(values) || position.includes(values) || asset_type.includes(values)){
             element.style.display = "block"
         }
     })

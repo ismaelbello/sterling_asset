@@ -1,26 +1,23 @@
 
-img {
+.logo {
     width: 200px;
-    height: 70px;
+    height: 60px;
     padding: 10px 15px;
+}
+
+a{
+    text-decoration: none;
 }
 
 .branch_asset{
     width: 90%;
     margin: 0 auto;
     position: relative;
-    margin-top: 150px;
-    margin-bottom: 150px;
-}
-.branch_asset{
-    width: 90%;
-    margin: 0 auto;
-    position: relative;
-    margin-top: 150px;
+    margin-top: 10px;
     margin-bottom: 150px;
     font-family: 'Nunito', sans-serif;
 }
-.branch_asset h1{
+.branch_directory h1{
     text-align: center;
     font-size: 2em;
     color: red;
@@ -74,7 +71,7 @@ form.search_form i{
     margin-bottom: 0;
     line-height: 0;
 }
-.branch_listing .branch .job_type{
+.branch_listing .branch .asset_type{
     font-weight: 900;
     padding: 10px;
     background-color: #333;
@@ -84,11 +81,11 @@ form.search_form i{
 .branch_listing .branch:hover,
 .branch_listing .branch:hover h2{
     color: #fff;
-    background-color: #BC658D;
+    background-color: rgb(233, 139, 139);
     transition: .2s ease-in;
 }
-.branch_listing .branch:hover .job_type{
-    background-color: #BC658D;
+.branch_listing .branch:hover .asset_type{
+    background-color: red;
     border: 1px solid #fff;
 }
 

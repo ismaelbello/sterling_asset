@@ -1,6 +1,7 @@
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const password = document.getElementById('password');
+const submit  = document.querySelector('.submit');
 
 
 form.addEventListener("submit", (e) =>{
@@ -46,11 +47,15 @@ const validateInputs = () => {
 
 if(passwordValue === "") {
     setError(password, "Password is required");
+    
 } else if(passwordValue.length < 8) {
     setError(password, "Password must be at least 8 character");
 } else {
     setSuccess(password)
 }
-
+if (usernameValue && passwordValue){
+    window.location.href="/assets/pages/asset.html"
 }
+}
+
 
